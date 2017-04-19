@@ -2,10 +2,13 @@
 
 ## Requirement
 - Ubuntu 14.04 OS
-- PyCharm Installed
+- PyCharm Community 2017
 
 
 ## Installation Documentation
 - Use PyCharm
 - Use Interpreter as Virtual Env of PyCharm
-- TensorFlow Installation Document https://www.tensorflow.org/install/install_linux
+- [Google TensorFlow Installation Page](https://www.tensorflow.org/install/install_linux)
+
+## References
+- [Stanford Class Notes](http://web.stanford.edu/class/cs20si/syllabus.html)
