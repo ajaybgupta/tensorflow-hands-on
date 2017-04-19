@@ -1,7 +1,9 @@
 import tensorflow as tf
 
+"""Hello World in TensorFlow"""
+
 # String Constant
-hello = tf.constant('Hello, TensorFlow!')
+hello = tf.constant('Hello, World!')
 
 # Number Constant
 const_one = tf.constant(1.0, tf.float32)

@@ -1,5 +1,7 @@
 import tensorflow as tf
 
+"""Generating Session Graph and Using TensorBoard for Visualization"""
+
 # Number Constant
 # Name is added to get name on graph, otherwise TensorFlow will give name as const and const_1
 const_one = tf.constant(1.0, tf.float32, name="const_one")
@@ -16,4 +18,7 @@ with tf.Session() as sess:
 
 # Session Graph can be viewed on TensorBoard using this command
 # tensorboard --logdir="./graphs"
+# Go to graph tab for getting the graph connection between node
+# Useful while debugging complex data flows
+
 writer.close()
