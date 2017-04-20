@@ -21,9 +21,19 @@ const_vector_six = tf.fill([2, 3], 8, name="const_vector_six")
 
 # Sequence Constant
 # Lin Space is used for reaching from start to end and in step.
-# As we have specified as step 4 the output is 10 11 12 13
+# As we have specified as step 4 the number of elements will be 4 viz 10 11 12 13
 # If we specify step as 7 it will give output as 10 10.5 11 11.5 till it reaches 13.0
 const_vector_seven = tf.linspace(10.0, 13.0, 4, name="const_vector_seven")
+
+# Range
+# It is used for getting elements in range
+# We specify start, end and step size for the same to generate the range vector
+const_vector_eight = tf.range(1, 10, 1, name="const_vector_eight")
+const_vector_nine = tf.range(10, 1, -0.5, name="const_vector_nine")
+# We will be getting exception over here as start to end can't be reached by using step
+# const_vector_ten = tf.range(10, 1, 0.5, name="const_vector_ten")
+# If we specify the range
+const_vector_eleven = tf.range(10, name="const_vector_eleven")
 
 with tf.Session() as sess:
     print(sess.run(const_scalar_one))
@@ -37,3 +47,7 @@ with tf.Session() as sess:
     print(sess.run(const_vector_five))
     print(sess.run(const_vector_six))
     print(sess.run(const_vector_seven))
+    print(sess.run(const_vector_eight))
+    print(sess.run(const_vector_nine))
+    # print(sess.run(const_vector_ten))
+    print(sess.run(const_vector_eleven))
