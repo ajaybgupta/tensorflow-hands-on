@@ -1,10 +1,13 @@
 import tensorflow as tf
 
+# Constant Scalar
 const_scalar_one = tf.constant(1.0)
 const_scalar_two = tf.constant(1.0, tf.float32)
 const_scalar_three = tf.constant(1.0, tf.float32, name="const_scalar_three")
 
+# Constant Vector
 const_vector_one = tf.constant([2, 2], name="const_vector_one")
+# Constant Matrix
 const_matrix_one = tf.constant([[2, 2], [1, 1]], name="const_matrix_one")
 # We can have n dimension tensor - Useful while computation
 const_tensor_3D = tf.constant([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], name="const_tensor_3D")
